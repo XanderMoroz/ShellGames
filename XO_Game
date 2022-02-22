@@ -79,7 +79,7 @@ def game_cicler(board_list):
                 got_winner = True
                 break
         if move_count == 9:
-            print("В это Ничья!")
+            print("А это Ничья!")
             break
 
 game_cicler(list_for_xo_board)
