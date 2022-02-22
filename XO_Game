@@ -77,7 +77,6 @@ def game_cicler(board_list):
                 board_building(board_list)
                 print("В этот раз победил игрок ставивший", winner, "Поздравляем!")
                 got_winner = True
-                list_for_xo_board = ["7", "8", "9", "4", "5", "6", "1", "2", "3"]
                 break
         if move_count == 9:
             print("В это Ничья!")
