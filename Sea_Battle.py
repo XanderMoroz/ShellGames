@@ -1,40 +1,5 @@
 from random import randint
 
-class Error(Exception):
-    "Общий класс исключений для игры"
-    pass
-class BoardOutException(Error):
-    def __str__(self):
-        return "Вы пытаетесь выстрелить за доску!"
-    pass
-class BusyDotException(Error):
-    def __str__(self):
-        return "Эта клетка уже занята. Выберите другую."
-    pass
-class BoardWrongShipException(Error):
-    pass
-
-class Dot:
-    "Базовый класс точки на игровом поле"
-
-    def __init__(self, x, y):
-        """
-        Конструктор обьекта класса Dot
-        :param x: координата точки по горизонтали - целочисленное значение.
-        :param y: координата точки по вертикали - целочисленное значение.
-        """
-        self.x = x
-        self.y = y
-
-    def __eq__(self, other_dot):
-        """
-        Метод сравнивает координаты точки с координатами другой точки.
-        :param other_dot: объект класса Dot
-        :return: True если координаты точек совпадают и False если не совпадают.
-        """
-        return self.x == other_dot.x and self.y == other_dot.y
-    def __repr__(self):
-        return f"Dot({self.x}, {self.y})"
 
 class Ship:
     "Базовый класс корабля"
