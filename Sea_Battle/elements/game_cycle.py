@@ -20,7 +20,6 @@ class Game:
         self.ai = Ai(ai_board,player_board)
         self.user = User(player_board, ai_board)
 
-
     def create_board(self):
         """
         Метод осуществляет попытки расположить корабли на доске.
@@ -96,7 +95,6 @@ class Game:
                 print("Ваш противник выиграл!")
                 break
             num += 1
-
 
     def start(self):
         "Метод запускающий приветствие и цикл игры"
